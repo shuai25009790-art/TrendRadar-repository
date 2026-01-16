@@ -163,7 +163,7 @@ notification:
   # 注意：GitHub Actions 执行时间不稳定，时间范围建议至少留足 2 小时
   #       如果想要精准的定时推送，建议使用 Docker 部署在个人服务器上
   push_window:
-    enabled: false                    # 是否启用推送时间窗口控制
+    enabled: true                    # 是否启用推送时间窗口控制
     start: "20:00"                    # 开始时间（北京时间）
     end: "22:00"                      # 结束时间（北京时间）
     once_per_day: true                # true=窗口内只推送一次，false=窗口内每次执行都推送
@@ -280,7 +280,7 @@ ai_analysis:
   #   - gemini: Google Gemini
   #   - custom: 自定义 OpenAI 兼容接口（需填写完整 base_url）
   provider: "deepseek"              # 提供商
-  api_key: ""                       # API Key（建议使用环境变量 AI_API_KEY）
+  api_key: "sk-9afa728c83e24e39b91f4dc79ed5519e"                       # API Key（建议使用环境变量 AI_API_KEY）
 
   model: "deepseek-chat"            # 模型名称
                                     # DeepSeek: deepseek-chat, deepseek-reasoner
